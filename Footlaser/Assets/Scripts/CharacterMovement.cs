@@ -21,7 +21,7 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKey && _canFloat)
+        if(Input.GetKey(KeyCode.Space) && _canFloat)
         {
             if(_amountFloating < _maxFloating)
             {
