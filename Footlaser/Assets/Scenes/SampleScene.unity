@@ -442,6 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 7830405917224720649, guid: 872ffa86eeba5244f8c475d02ccfcc72, type: 3}
+  flyingEnemyPrefab: {fileID: 7454787981071362360, guid: 93d36c94a3686704c806a89606bc81f3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
