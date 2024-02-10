@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WalkingEnemyMovement : MonoBehaviour
+public class EnemyMovement : MonoBehaviour
 {
     private float _speed;
 
