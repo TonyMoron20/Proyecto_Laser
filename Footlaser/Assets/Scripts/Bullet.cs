@@ -21,7 +21,6 @@ public class Bullet : MonoBehaviour
     {
         if(collision.tag.Equals("Enemy"))
         {
-            Destroy(collision);
             Destroy(this.gameObject);
         }
     }
