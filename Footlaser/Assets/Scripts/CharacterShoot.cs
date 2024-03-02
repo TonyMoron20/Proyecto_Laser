@@ -29,7 +29,7 @@ public class CharacterShoot : MonoBehaviour
     {
         if (Time.time > _nextFire)
         {
-            Instantiate(_bulletPrefab, transform.position + new Vector3(.88f, 0, 0), Quaternion.identity);
+            Instantiate(_bulletPrefab, transform.position + new Vector3(.88f, .2f, 0), Quaternion.identity);
 
             _nextFire = Time.time + _fireRate;
         }

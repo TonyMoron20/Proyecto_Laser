@@ -7,7 +7,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     private float _speed = 6f;
     private float _amountFloating = 0;
-    private float _maxFloating = 3;
+    private float _maxFloating = 6;
     private bool _canFloat = true;
 
     //public GameObject prefabEnemy;
@@ -45,10 +45,5 @@ public class CharacterMovement : MonoBehaviour
                 _canFloat = true; 
             }
         }
-
-        //if(Input.anyKeyDown)
-        //{
-        //    Instantiate(prefabEnemy, new Vector3(10, -3, 0), Quaternion.identity);
-        //}
     }
 }
