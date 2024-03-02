@@ -26,5 +26,4 @@ public class UIManager : MonoBehaviour
         _score += 10;
         scoreTxt.text = $"Score: {_score}";
     }
-
 }
