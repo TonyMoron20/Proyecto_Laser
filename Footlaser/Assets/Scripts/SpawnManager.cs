@@ -25,6 +25,6 @@ public class SpawnManager : MonoBehaviour
 
     private float RandomHeight()
     {
-        return Random.Range(0, 4);
+        return Random.Range(0, 2);
     }
 }
