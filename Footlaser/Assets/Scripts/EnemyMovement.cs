@@ -5,10 +5,11 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     private float _speed;
+    private UIManager _uiManager;
 
-    // Start is called before the first frame update
     void Start()
     {
+        _uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
         _speed = Random.Range(3f, 6f);
     }
 

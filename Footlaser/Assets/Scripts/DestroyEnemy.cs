@@ -17,8 +17,13 @@ public class DestroyEnemy : MonoBehaviour
         if(collision.tag.Equals("Bullet"))
         {
             _uiManager.UpdateScore();
-            Instantiate(particlesPrefab, transform.position, Quaternion.identity);
-            Destroy(this.gameObject);
         }
+        else if(collision.tag.Equals("Player"))
+        {
+            _uiManager.UpdateLifes(-1);
+        }
+
+        Instantiate(particlesPrefab, transform.position, Quaternion.identity);
+        Destroy(this.gameObject);
     }
 }
