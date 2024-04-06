@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3118530138029460329}
   - component: {fileID: 6842437243292931931}
   - component: {fileID: 1603373081547329840}
-  - component: {fileID: 8019807277610753159}
   - component: {fileID: 8780551101275214446}
   - component: {fileID: -3773067564099023214}
+  - component: {fileID: 8019807277610753159}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -115,18 +115,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8019807277610753159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901032595585602517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 943fedc7bea4b244789f6f0e48725768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &8780551101275214446
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -180,7 +168,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -258,3 +246,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8019807277610753159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901032595585602517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943fedc7bea4b244789f6f0e48725768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -6,7 +6,9 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public TMP_Text scoreTxt;
-    public TMP_Text LifesText;
+    public TMP_Text lifesText;
+    public GameObject gameOverWindow;
+    public GameObject uIWindow;
 
     private int _score;
     private int _lifes;
@@ -14,6 +16,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1.0f;
         _score = 0;
         _lifes = 3;
     }
@@ -27,6 +30,21 @@ public class UIManager : MonoBehaviour
     public void UpdateLifes(int value)
     {
         _lifes += value;
-        LifesText.text = $"x {_lifes}";
+
+        if (_lifes <= 0) 
+        {
+            GameOver();
+        }
+        else
+        {
+            lifesText.text = $"x {_lifes}";
+        }
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0.0f;
+        uIWindow.SetActive(false);
+        gameOverWindow.SetActive(true);
     }
 }

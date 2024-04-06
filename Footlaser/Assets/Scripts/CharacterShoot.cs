@@ -10,13 +10,6 @@ public class CharacterShoot : MonoBehaviour
     private float _fireRate = 0.5f;
     private float _nextFire = 0.0f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
